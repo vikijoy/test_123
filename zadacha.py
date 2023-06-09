@@ -10,7 +10,7 @@ x, y = input().split() #проверяем, являются ли вводимы
 try:
     print(isinstance(x, int) and isinstance(y, int))
 except TypeError:
-    print('Number mus be an integer')
+    print('Цифра должна быть целым числом')
 
 cities = input().split() #принимаем список городов, проверяем есть ли в списке не str
 if all(map(lambda x: x.isalpha(), cities)):
